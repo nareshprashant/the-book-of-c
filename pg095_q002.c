@@ -9,52 +9,34 @@ int main (int argc, char* argv[] ){
   *         Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Incorrect input 
   * Note that output is case sensitive */
   
-    int month = 0;
-    printf("Enter month number ");
-    scanf("%d",&month);
+   int day = 0;
+    printf("Enter day of week [1-7]: ");
+    scanf("%d",&day);
  
-    if(month == 1) {
-        printf("January\n");
-    }
-    if(month == 2) {
-        printf("February\n");
-    }
-    if(month == 3) {
-        printf("March\n");
-    }
-    if(month == 4) {
-        printf("April\n");
-    }
-    if(month == 5) {
-        printf("May\n");
-    }
-    if(month == 6) {
-        printf("June\n");
-    }
-    if(month == 7) {
-        printf("July\n");
-    }
-    if(month == 8) {
-        printf("August\n");
-    }
-    if(month == 9) {
-        printf("September\n");
-    }
-    if(month == 10) {
-        printf("October\n");
-    }
-    if(month == 11) {
-        printf("November\n");
-    }
-    if(month == 12) {
-        printf("December\n");
-    }
- 
-    if(month < 1 ) {
-        printf("Wrong input\n");
-    }
-    if(month > 12 ) {
-        printf("Wrong input\n");
+    switch(day) {
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        case 3:
+            printf("Wednesday\n");
+            break;
+        case 4:
+            printf("Thursday\n");
+            break;
+        case 5:
+            printf("Friday\n");
+            break;
+        case 6:
+            printf("Saturday\n");
+            break;
+        case 7:
+            printf("Sunday\n");
+            break;
+        default:
+            printf("Invalid input\n");
     }
   return 0
 }
